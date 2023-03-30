@@ -8,15 +8,14 @@ import static org.hamcrest.CoreMatchers.is;
 
 public class MeasurementTest
 {
-    Measurement measurementObject1cm1cm = new Measurement(1,1);
-
+    //
+    Centimeter oneCentimeter = new Centimeter(1);
+    Centimeter anotherOneCentimeter = new Centimeter(1);
     @Test
 
     void toReturnTrueIfOneCentimeterIsOneCentimeter()
     {
 
-        boolean actualValue = measurementObject1cm1cm.checkCentimeterCentimeter();
-
-        assertThat(actualValue,is(equalTo(true)));
+        assertThat(oneCentimeter,is(equalTo(anotherOneCentimeter)));
     }
 }
